@@ -1,0 +1,24 @@
+{
+	"user": [
+		{
+			"email": "a@a.a231f11",
+			"password": "$2b$10$lArRFx/nTqejjwXQcAbE1eapUEhU7jDfKXArNakjpgs7w29F7krW.",
+			"isHashed": true
+		},
+		{
+			"email": "a@a.com",
+			"password": "$2b$10$xt5a.v6AVJ5uU6FuOFP1S.RAe39yyMod8dkwYfQv/gjJUPajILBVC",
+			"isHashed": true
+		},
+		{
+			"email": "a@a.comcaf",
+			"password": "$2b$10$EdPwkgozins4R0i1f/cuI.2xRqHF1fGaxD4.Dk1CmCBwpfGYvLSoq",
+			"isHashed": true
+		},
+		{
+			"email": "a@a.co",
+			"password": "$2b$10$aoCe0XuvPMc8tLaV1fHoJ.BnpBMxkQcWmWC15h0QonRnzyF6YC7nu",
+			"isHashed": true
+		}
+	]
+}
