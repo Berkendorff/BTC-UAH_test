@@ -20,6 +20,7 @@ const userRepository = new UserRepository(db);
 
 require('./lib/auth')(userRepository);
 
+app.use(express.static(__dirname + '/app/static'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use('/', routes);
@@ -32,7 +33,7 @@ app.use(function(err, req, res, next) {
 });
 
 app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}/index.html`);
 });
 
 
