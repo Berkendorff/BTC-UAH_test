@@ -11,7 +11,7 @@ const secureRoute = require('./app/routes/secure');
 const UserRepository = require('./app/repository/user.repository');
 
 const {filePath, fileName} = require('./app/config/database')();
-const {port = 8000} = require('./app/config/server')();
+const {port} = require('./app/config/server')();
 const dbPath = path.join(__dirname, filePath, fileName);
 
 const app = express();
