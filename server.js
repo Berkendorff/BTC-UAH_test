@@ -4,7 +4,6 @@ const passport = require('passport');
 const bodyParser = require('body-parser');
 
 const Database = require('./lib/database');
-const getBtcRate = require('./lib/rater');
 
 const routes = require('./app/routes/routes');
 const secureRoute = require('./app/routes/secure');
@@ -27,9 +26,9 @@ app.use('/', routes);
 app.use('/btcRate', passport.authenticate('jwt', { session: false }), secureRoute);
 
 app.use(function(err, req, res, next) {
-    console.log({ error: JSON.stringify(err.message)});
     res.status(err.status || 500);
     res.json({ error: JSON.stringify(err.message) });
+    next();
 });
 
 app.listen(port, () => {
